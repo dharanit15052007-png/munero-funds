@@ -1,0 +1,259 @@
+
+.dashboard {
+  min-height: 100vh;
+  background: #f5f7fa;
+  color: #26364a;
+  font-family: Arial, sans-serif;
+}
+
+.dashboard * {
+  box-sizing: border-box;
+}
+
+.dashboard-header {
+  min-height: 76px;
+  padding: 0 8%;
+  background: #071b35;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #c49a45;
+}
+
+.dashboard-logo {
+  color: white;
+  font-size: 23px;
+  font-weight: 800;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.dashboard-logo span {
+  color: #d4b36a;
+}
+
+.logout-btn {
+  background: #c49a45;
+  color: #071b35;
+  padding: 11px 24px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.logout-btn:hover {
+  background: #e0bd70;
+}
+
+.dashboard-content {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 45px 25px;
+}
+
+.dashboard-label {
+  color: #bd9655;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+.dashboard-content > h1 {
+  font-size: 34px;
+  color: #183b56;
+  margin-bottom: 10px;
+}
+
+.dashboard-description {
+  color: #7b8794;
+  font-size: 15px;
+  margin-bottom: 35px;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+  margin-bottom: 35px;
+}
+
+.dashboard-card {
+  min-width: 0;
+  min-height: 145px;
+  background: white;
+  padding: 26px;
+  border: 1px solid #e8edf2;
+  border-left: 4px solid #c49a45;
+  border-radius: 10px;
+  box-shadow: 0 3px 12px rgba(24, 59, 86, 0.05);
+  transition: 0.25s;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-3px);
+}
+
+.dashboard-card p {
+  color: #788697;
+  font-size: 14px;
+  margin-bottom: 13px;
+}
+
+.dashboard-card h2 {
+  color: #183b56;
+  font-size: 25px;
+  overflow-wrap: anywhere;
+  margin-bottom: 8px;
+}
+
+.dashboard-card span {
+  color: #9aa5b1;
+  font-size: 12px;
+}
+
+.dashboard-card .status-value {
+  color: #218653;
+}
+
+.dashboard-info {
+  background: white;
+  padding: 30px;
+  border: 1px solid #e8edf2;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  box-shadow: 0 3px 12px rgba(24, 59, 86, 0.04);
+}
+
+.dashboard-info > h2 {
+  color: #183b56;
+  font-size: 21px;
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #edf0f3;
+}
+
+.profile-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.profile-item {
+  padding: 18px;
+  background: #f8fafc;
+  border: 1px solid #edf0f3;
+  border-radius: 7px;
+}
+
+.profile-item p {
+  color: #8290a0;
+  font-size: 13px;
+  margin-bottom: 9px;
+}
+
+.profile-item h3 {
+  color: #263f56;
+  font-size: 16px;
+}
+
+.payment-table {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.payment-row {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(120px, 1fr));
+  padding: 17px 20px;
+  min-width: 400px;
+}
+
+.payment-heading {
+  background: #f2f5f8;
+  color: #183b56;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 6px;
+}
+
+.payment-empty {
+  text-align: center;
+  padding: 35px 10px;
+  color: #8995a2;
+  font-size: 14px;
+}
+
+.dashboard-note {
+  background: #102b4e;
+  color: white;
+  padding: 25px;
+  border-radius: 10px;
+  margin-top: 25px;
+}
+
+.dashboard-note h3 {
+  color: #d4b36a;
+  margin-bottom: 12px;
+}
+
+.dashboard-note p {
+  color: #e0e7ef;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.dashboard-footer {
+  text-align: center;
+  padding: 25px;
+  background: #071b35;
+  color: white;
+}
+
+.dashboard-footer h3 {
+  color: #d4b36a;
+  margin-bottom: 8px;
+}
+
+.dashboard-footer p {
+  margin-bottom: 10px;
+  color: #dce4ed;
+}
+
+.dashboard-footer small {
+  color: #aebdcd;
+}
+
+@media (max-width: 600px) {
+  .dashboard-header {
+    padding: 0 5%;
+  }
+
+  .dashboard-logo {
+    font-size: 19px;
+  }
+
+  .logout-btn {
+    padding: 9px 15px;
+  }
+
+  .dashboard-content {
+    padding: 30px 18px;
+  }
+
+  .dashboard-content > h1 {
+    font-size: 28px;
+  }
+
+  .dashboard-grid,
+  .profile-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-info {
+    padding: 20px;
+  }
+}
