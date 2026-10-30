@@ -160,67 +160,20 @@ function App() {
 
         <section className="dashboard-section section" id="dashboard">
           <p className="eyebrow">YOUR ACCOUNT</p>
-          <h2>My Dashboard</h2>
+          <h2>Your Savings, Your Account.</h2>
           <p className="section-description">
-            Your savings overview and account information in one place.
+            Access your personal savings details, monthly payments,
+            and payment history securely through your customer portal.
           </p>
 
-          <div className="dashboard-grid">
-            <article className="dashboard-card">
-              <span>Total Savings</span>
-              <h3>₹0.00</h3>
-              <p>Your total savings amount</p>
-            </article>
-
-            <article className="dashboard-card">
-              <span>Monthly Payment</span>
-              <h3>₹0.00</h3>
-              <p>Your monthly contribution</p>
-            </article>
-
-            <article className="dashboard-card">
-              <span>Next Payment Date</span>
-              <h3>Not Set</h3>
-              <p>Your upcoming payment date</p>
-            </article>
-
-            <article className="dashboard-card">
-              <span>Customer ID</span>
-              <h3>MF0001</h3>
-              <p>Demo customer ID</p>
-            </article>
-
-            <article className="dashboard-card">
-              <span>Savings Plan</span>
-              <h3>My Savings</h3>
-              <p>Demo savings plan</p>
-            </article>
-
-            <article className="dashboard-card">
-              <span>Account Status</span>
-              <h3>Demo</h3>
-              <p>Sample account information</p>
-            </article>
-          </div>
-
           <div className="dashboard-profile">
-            <h3>Customer Profile</h3>
-            <p><strong>Name:</strong> Demo Customer</p>
-            <p><strong>Customer ID:</strong> MF0001</p>
-            <p><strong>Email:</strong> Not Connected</p>
-            <p><strong>Phone:</strong> Not Connected</p>
-          </div>
-
-          <div className="dashboard-history">
-            <h3>Payment History</h3>
-            <div className="payment-heading">
-              <span>Date</span>
-              <span>Amount</span>
-              <span>Status</span>
-            </div>
-            <p className="payment-empty">
-              No payment records available.
-            </p>
+            <h3>Customer Portal</h3>
+            <p>View your latest savings information.</p>
+            <p>Check your monthly contributions.</p>
+            <p>Track your payment history.</p>
+            <a href="/login" className="primary-btn">
+              Login to Your Account →
+            </a>
           </div>
         </section>
 
